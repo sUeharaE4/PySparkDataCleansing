@@ -1,0 +1,9 @@
+data_id	customer_id	item_name	price	rate	datetime	payload
+1	100	pyspark sample	3980	0.8	2020-05-23 12:21:59	{"status": 1, "is_old": true, "order_date": "2020-05-23", "timestamp": 1590204648}
+2	200	aws glue sample	2980	2.8	2020-05-22 22:22:22	{"status": 0, "is_old": false, "order_date": "2020-05-22", "timestamp": 1590104648}
+3	300	miss payload	980	0	2020-05-21 12:21:12	{}
+4	400		1200	1.1	2020-05-20 11:11:11	{"status": 1, "is_old": true, "order_date": "2020-05-23", "timestamp": 1590204648}
+5	500	miss price		1.1	2020-05-19 19:19:11	{"status": 1, "is_old": true, "order_date": "2020-05-23", "timestamp": 1590204648}
+6	600	miss rate	9999		2020-05-19 19:19:11	{"status": 1, "is_old": true, "order_date": "2020-05-23", "timestamp": 1590204648}
+7	700	miss datetime	1234	0.3		{"status": 1, "is_old": true, "order_date": "2020-05-23", "timestamp": 1590204648}
+1	100	updated data_id 1	3980	0.8	2020-05-25 12:21:59	{"status": 1, "is_old": false, "order_date": "2020-05-25", "timestamp": 1590204648}

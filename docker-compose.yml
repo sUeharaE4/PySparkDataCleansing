@@ -1,0 +1,26 @@
+version: "3"
+services:
+  glue.local:
+    build:
+      context: ./
+    container_name: gluelocal
+    volumes:
+      - ./src:/opt/src/src
+      - ./tests:/opt/src/tests
+    environment:
+      # dummy configure
+      - AWS_DEFAULT_REGION=ap-northeast-1
+      - AWS_DEFAULT_OUTPUT=json
+      - AWS_ACCESS_KEY_ID=xxx
+      - AWS_SECRET_ACCESS_KEY=xxx
+  aws.local:
+    image: localstack/localstack
+    environment:
+      - SERVICES=s3
+      - DEFAULT_REGION=ap-northeast-1
+      # dummy configure
+      - AWS_DEFAULT_REGION=ap-northeast-1
+      - AWS_DEFAULT_OUTPUT=json
+      - AWS_ACCESS_KEY_ID=xxx
+      - AWS_SECRET_ACCESS_KEY=xxx
+

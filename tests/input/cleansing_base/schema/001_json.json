@@ -1,0 +1,1 @@
+{"type": "array", "elementType": {"type": "struct", "fields": [{"name": "status", "type": "integer", "nullable": true, "metadata": {}}, {"name": "is_old", "type": "boolean", "nullable": true, "metadata": {}}, {"name": "order_date", "type": "date", "nullable": true, "metadata": {}}, {"name": "timestamp", "type": "long", "nullable": true, "metadata": {}}]}, "containsNull": true}
